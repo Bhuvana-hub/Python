@@ -5,7 +5,7 @@ import datetime as dt
 current_year=int(dt.datetime.now().year)
 
 ## reading file from CSV sheet and mapping it to Dataframe
-samp=pd.read_csv('c:\\Users\\b.nedumaran\\PycharmProjects\\data.csv')
+samp=pd.read_csv('c:\\Users\\PycharmProjects\\data.csv')
 samp_df=pd.DataFrame(samp)
 
 ## concatenating the 2 columns in the excel sheet to one column
@@ -31,6 +31,6 @@ samp_df=samp_df[['NAME','AGE','EMAIL','NATIONALITY','RELIGION']]
 print("THE FINAL OUTPUT DATA \n ", samp_df)
 
 ## Sending the output to excel sheet
-samp_df.to_csv("c:\\Users\\b.nedumaran\\PycharmProjects\\output.csv")
+samp_df.to_csv("c:\\Users\\PycharmProjects\\output.csv")
 
 print("the output file has been generated")
